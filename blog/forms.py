@@ -7,3 +7,8 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'text',)
+
+class DeleteNewForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = []        
